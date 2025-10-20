@@ -19,6 +19,7 @@ const skills = {
 };
 
 const achievements = [
+  "SLASSCOM National Ingenuity Awards 2025",
   "2nd Place at Algothon (CodeFest) Coding Competition (2024)",
   "2nd Place at SciFest (SLIIT) under the University Category (2024)",
   "4th Place at SLIIT Xtreme Coding Hackathon (2024)",
@@ -34,21 +35,21 @@ const achievements = [
 
 const experience = [
   {
-    title: "Junior Software Engineer (Intern)",
+    title: "Intern Software Engineer",
     company: "American Premium Water",
-    duration: "Dec 2024 - Present",
+    duration: "Dec 2024 - Jun 2025",
     description: `Developed an Admin Panel with JWT authentication to efficientlymanage the Customer Care Mobile Application, ensuring secure accessand role-based controls.Built a Management Portal to enhance customer relations, featuring
 custom report generation for insightful decision-making.Integrated OCR text recognition for seamless and automated form filling,improving usability and reducing manual input errors.Hosted both the sites in Azure VM and created a CD/CI pipe line forcontinues integration using GitHub workflow.
 Implemented Lazy Loading to optimize application performance, reducinginitial load time and enhancing user experience.
 `
   },
-  {
-    title: "Software Engineer Intern",
-    company: "Asipiya Soft Solutions",
-    duration: "June 2024 - Sep 2024",
-    description:
-      "Developed and maintained backend & frontend for Micro Finance application using Laravel. Created Jira-like interface for the Invoice application using React.js. Built complex interfaces for a Finance application using Laravel.",
-  },
+  // {
+  //   title: "Software Engineer Intern",
+  //   company: "Asipiya Soft Solutions",
+  //   duration: "June 2024 - Sep 2024",
+  //   description:
+  //     "Developed and maintained backend & frontend for Micro Finance application using Laravel. Created Jira-like interface for the Invoice application using React.js. Built complex interfaces for a Finance application using Laravel.",
+  // },
   
 ];
 
@@ -57,7 +58,7 @@ const education = [
     degree: "BSc (Hons) in IT Specialization in Software Engineering",
     institution: "Sri Lanka Institute of Information Technology",
     duration: "2022 - Present",
-    notes: "MMA, SciFest'24 - 1st Runner Up, Algothon'24 - 1st Runner Up",
+    notes: "SLIIT MMA, SESC",
   },
   {
     degree: "G.C.E A/L in Physical Science",

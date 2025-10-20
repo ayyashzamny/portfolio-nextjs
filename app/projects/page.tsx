@@ -2,6 +2,13 @@ import { FaExternalLinkAlt, FaHtml5, FaCss3Alt, FaJs, FaPhp, FaJava, FaReact, Fa
 import { SiMongodb, SiExpress, SiMysql ,SiArduino} from "react-icons/si";
 
 const projects = [
+   {
+    title: "book365.lk",
+    description:
+      `An innovative platform designed to unify sports‑facility bookings.\n\n• Real‑time slot booking across centers\n• Search nearby facilities when travelling\n• Transparent availability, timings, and fees\n• User‑friendly UI for seamless experience | The system is designed to: Help players easily book futsal courts Allow venue owners to manage bookings and availability Simplify the overall process for both sides`,
+    stack: ["react", "express", "node", "mysql"],
+    link: "https://book365.lk/",
+  },
   {
     title: "Finance Management REST API",
     description:
@@ -36,13 +43,6 @@ const projects = [
       `A modern frontend application where users can explore detailed information about countries worldwide.\n\n• Interactive explorer using live data from the REST Countries API\n• User authentication powered by Clerk\n• Fun geography quiz game\n• Fully responsive and engaging UI`,
     stack: ["react", "javascript"],
     link: "https://sa-countries.vercel.app/",
-  },
-  {
-    title: "Sports Booking Center (In Progress)",
-    description:
-      `An innovative platform designed to unify sports‑facility bookings.\n\n• Real‑time slot booking across centers\n• Search nearby facilities when travelling\n• Transparent availability, timings, and fees\n• User‑friendly UI for seamless experience`,
-    stack: ["react", "node", "mysql"],
-    link: "", // work in progress
   },
   {
     title: "RideAwake (Mobile)",
