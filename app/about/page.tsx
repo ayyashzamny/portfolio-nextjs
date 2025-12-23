@@ -1,5 +1,5 @@
-import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaBootstrap, FaPhp, FaLaravel } from "react-icons/fa";
-import { SiMongodb, SiMysql, SiExpress, SiPostgresql, SiDjango } from "react-icons/si";
+import { FaReact, FaJsSquare, FaBootstrap } from "react-icons/fa";
+import { SiMongodb, SiMysql, SiGitlab, SiAmazonwebservices, SiMicrosoftazure, SiAnsible, SiJenkins, SiTerraform } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 
 const skills = {
@@ -15,6 +15,13 @@ const skills = {
   databases: [
     { name: "MongoDB", icon: <SiMongodb /> },
     { name: "MySQL", icon: <SiMysql /> },
+  ],
+  devops: [
+    { name: "AWS", icon: <SiAmazonwebservices /> },
+    { name: "Azure", icon: <SiMicrosoftazure /> },
+    { name: "Ansible", icon: <SiAnsible /> },
+    { name: "Jenkins", icon: <SiJenkins /> },
+    { name: "Terraform", icon: <SiTerraform /> },
   ],
 };
 
@@ -35,13 +42,19 @@ const achievements = [
 
 const experience = [
   {
+    title: "Intern Devops Engineer",
+    company: "London Stock Exchange Group (LSEG)",
+    duration: "Nov 2025 - Present",
+    description: ` `
+  },
+  {
     title: "Intern Software Engineer",
     company: "American Premium Water",
     duration: "Dec 2024 - Jun 2025",
-    description: `Developed an Admin Panel with JWT authentication to efficientlymanage the Customer Care Mobile Application, ensuring secure accessand role-based controls.Built a Management Portal to enhance customer relations, featuring
-custom report generation for insightful decision-making.Integrated OCR text recognition for seamless and automated form filling,improving usability and reducing manual input errors.Hosted both the sites in Azure VM and created a CD/CI pipe line forcontinues integration using GitHub workflow.
-Implemented Lazy Loading to optimize application performance, reducinginitial load time and enhancing user experience.
-`
+    description: `Developed an Admin Panel with JWT authentication to efficiently manage the Customer Care Mobile Application, ensuring secure accessand role-based controls.Built a Management Portal to enhance customer relations, featuring
+                  custom report generation for insightful decision-making.Integrated OCR text recognition for seamless and automated form filling,improving usability and reducing manual input errors.Hosted both the sites in Azure VM and created a CD/CI pipe line forcontinues integration using GitHub workflow.
+                  Implemented Lazy Loading to optimize application performance, reducinginitial load time and enhancing user experience.
+                  `
   },
   // {
   //   title: "Software Engineer Intern",
@@ -73,10 +86,10 @@ export default function About() {
 
     
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">About Me</h1>
+      {/* <h1 className="mb-8 text-2xl font-semibold tracking-tighter">About Me</h1>
       <p className="mb-4">
         I am Ayyash Zamny, a Software Engineering student at Sri Lanka Institute of Information Technology. With a passion for developing innovative solutions, I have worked on a variety of projects ranging from web development to IoT systems.
-      </p>
+      </p> */}
 
       {/* Skills Section */}
       <h2 className="text-xl font-semibold mt-10 mb-4">Skills</h2>
@@ -112,6 +125,19 @@ export default function About() {
         <h3 className="font-semibold">Databases</h3>
         <div className="flex space-x-4 mt-2">
           {skills.databases.map((skill, index) => (
+            <div key={index} className="flex items-center space-x-2">
+              <span className="text-2xl">{skill.icon}</span>
+              <span>{skill.name}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* DevOps Section */}
+      <div className="mt-6">
+        <h3 className="font-semibold">DevOps</h3>
+        <div className="flex space-x-4 mt-2">
+          {skills.devops.map((skill, index) => (
             <div key={index} className="flex items-center space-x-2">
               <span className="text-2xl">{skill.icon}</span>
               <span>{skill.name}</span>
